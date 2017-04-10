@@ -11,7 +11,7 @@ var VacansyList = React.createClass({
 				{
 
 					this.props.categories.map(function(el, index){
-					return <Vacansy key={index} title={el.title} id={el.count}/>;
+					return <Vacansy key={index} title={el.title} count={el.count}/>;
 					})	
 				}
 				</ul>

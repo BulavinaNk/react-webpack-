@@ -5,7 +5,7 @@ var Vacansy = React.createClass({
 		return (
 			<li>
 				<div>{this.props.title}</div>				
-				<div>{this.props.id}</div>				
+				<div className="bold">{this.props.count}</div>				
 			</li>);
 		}
 });

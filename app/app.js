@@ -2,6 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import VacansyList from "./components/VacansyList";
 import VacansyWordsList from "./components/VacansyWordsList";
+
+import "./css/main.css";
+
 var App = React.createClass({
 
 	componentDidMount(){
@@ -14,7 +17,7 @@ var App = React.createClass({
 
   		}).then(function(result){
   			self.loadData(result);
-  			//console.log(result);
+  			
   		});			  		
 
 	},
@@ -32,7 +35,7 @@ var App = React.createClass({
   			vacancies: data.vacancies
 
   		})
-  		
+
 
   	},
 
@@ -40,7 +43,7 @@ var App = React.createClass({
 		console.log("render");
 		return (
 			<div>
-				<div>Hello!</div>
+				
 				<VacansyList categories={this.state.categories}/>
 				<VacansyWordsList vacancies={this.state.vacancies}/>
 
@@ -59,5 +62,3 @@ ReactDOM.render(
 );
 
 
-var a = "Nina";
-console.log(a);

@@ -2,7 +2,7 @@ import React from "react";
 import Vacansy from "./VacansyWords";
 
 var VacansyWordsList = React.createClass({
-	findArray(){
+	sortrray(){
 		var arrayWords = this.props.vacancies.map(function(item){						
 			return item.header.toLowerCase().replace(/-/g, " ").split(" ");
 		});		
@@ -19,10 +19,7 @@ var VacansyWordsList = React.createClass({
 		arrayWords.forEach(function(item){	
 			item.forEach(function(word){
 				var index = getIndexWords (word);
-				if(words.length < 1){
-					words.push({name:word, count: 1});
-				}
-				else if(index < 0){
+				if(index < 0){
 					words.push({name:word, count: 1});
 				}
 				else{
@@ -31,21 +28,21 @@ var VacansyWordsList = React.createClass({
 			});				
 		});
 		return words;
-		console.log(words);		
+			
 	},	
 	funcSort(){
-		var arr = this.findArray();
+		var arr = this.sortrray();
 		function compareCount(wordA, wordB) {
 			return wordB.count - wordA.count;
 		}
 		arr.sort(compareCount);
 		return arr;
-		console.log(arr);
+		
 	},
 	render(){
-		//this.findArray();
+		
 		this.funcSort();
-		console.log(this.props);
+		
 		return (
 
 			<div>				

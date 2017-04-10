@@ -1,8 +1,8 @@
 {
-  "name": "webpak",
+  "name": "react-webpack",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,12 +23,12 @@
     "eslint-plugin-import": "^1.15.0",
     "eslint-plugin-jsx-a11y": "^2.2.2",
     "eslint-plugin-react": "^6.3.0",
-    "webpack-dev-server": "^2.4.2"
+    "webpack-dev-server": "^2.4.2",
+    "css-loader": "^0.28.0",
+    "style-loader": "^0.16.1"
   },
   "dependencies": {
-    "css-loader": "^0.28.0",
     "react": "^15.5.3",
-    "react-dom": "^15.5.3",
-    "style-loader": "^0.16.1"
+    "react-dom": "^15.5.3"
   }
 }
