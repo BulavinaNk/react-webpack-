@@ -18,7 +18,7 @@ npm install -g webpack-dev-server
 
 Для запуска сервера запустить:
 ```
-webpack dev server 
+webpack-dev-server 
 ```
 
 
